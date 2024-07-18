@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  font-family: "CARTOON FREE", sans-serif;
+  margin: 0%;
+  border: 0%;
+}
+
+.header {
+  width: 100vw;
+  text-align: center;
+  border-bottom: 1px solid #393939;
+}
+
+img.header {
+  height: 10vh;
+}
+
+.upgrades {
+  position: relative;
+  display: flex;
+  left: 35vw;
+  right: 35vw;
+  width: 30vw;
+  height: 200px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: end;
+}
+
+img.upgrade-a {
+  height: 1em;
+}
+
+.upgrade-a {
+  width: 15vw;
+  height: 40px;
+}
+
+.upgrade-p {
+  width: 15vw;
+  height: 40px;
+}
