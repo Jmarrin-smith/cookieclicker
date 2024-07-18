@@ -25,10 +25,6 @@ function btnclick() {
 
 dclicker.addEventListener("click", btnclick);
 
-function btninc() {
-  cps += increase;
-}
-
 function afford(cost) {
   if (cookies >= cost) {
     return true;
@@ -50,12 +46,6 @@ function getCount() {
 
 getCount();
 //localStorage.clear();
-
-const gran = document.getElementById("gran");
-const shop = document.getElementById("shop");
-const factory = document.getElementById("factory");
-const airline = document.getElementById("airline");
-const bank = document.getElementById("Bank");
 
 function affordable() {
   if (afford(30)) {
@@ -101,3 +91,60 @@ function affordable() {
 }
 
 setInterval(affordable, 500);
+
+const gran = document.getElementById("gran");
+const shop = document.getElementById("shop");
+const factory = document.getElementById("factory");
+const airline = document.getElementById("airline");
+const bank = document.getElementById("Bank");
+
+function buy(cost, increase) {
+  cookies -= cost;
+  Dcookies.textContent = cookies;
+  cps += increase;
+  Dcps.textContent = cps + " C/S";
+  affordable();
+}
+
+gran.addEventListener("click", function () {
+  buy(30, 1);
+});
+
+shop.addEventListener("click", function () {
+  buy(300, 10);
+});
+
+factory.addEventListener("click", function () {
+  buy(3000, 100);
+});
+
+airline.addEventListener("click", function () {
+  buy(3000, 1000);
+});
+
+bank.addEventListener("click", function () {
+  buy(3000, 10000);
+});
+
+const power = document.getElementById("power");
+const mega = document.getElementById("mega");
+const superc = document.getElementById("super");
+
+function buy1(cost, increase) {
+  cookies -= cost;
+  Dcookies.textContent = cookies;
+  btnp += increase;
+  affordable();
+}
+
+power.addEventListener("click", function () {
+  buy1(100, 1);
+});
+
+mwga.addEventListener("click", function () {
+  buy1(1000, 10);
+});
+
+superc.addEventListener("click", function () {
+  buy1(10000, 100);
+});
