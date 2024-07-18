@@ -119,11 +119,11 @@ factory.addEventListener("click", function () {
 });
 
 airline.addEventListener("click", function () {
-  buy(3000, 1000);
+  buy(30000, 1000);
 });
 
 bank.addEventListener("click", function () {
-  buy(3000, 10000);
+  buy(300000, 10000);
 });
 
 const power = document.getElementById("power");

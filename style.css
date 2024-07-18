@@ -21,6 +21,7 @@ img.header {
   left: 35vw;
   right: 35vw;
   width: 30vw;
+  min-width: 200px;
   height: 200px;
   flex-wrap: wrap;
   flex-direction: column;
