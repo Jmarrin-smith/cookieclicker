@@ -141,7 +141,7 @@ power.addEventListener("click", function () {
   buy1(100, 1);
 });
 
-mwga.addEventListener("click", function () {
+mega.addEventListener("click", function () {
   buy1(1000, 10);
 });
 
