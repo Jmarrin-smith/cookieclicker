@@ -34,13 +34,13 @@ function afford(cost) {
 }
 
 function getCount() {
-  cookies = parseInt(localStorage.getItem("cookies"));
+  cookies = parseInt(localStorage.getItem("cookies")) || 0;
   console.log(cookies);
   Dcookies.textContent.append = cookies;
-  cps = parseInt(localStorage.getItem("cps"));
+  cps = parseInt(localStorage.getItem("cps")) || 1;
   console.log(cps);
   Dcps.textContent = cps;
-  btnp = parseInt(localStorage.getItem("button-power"));
+  btnp = parseInt(localStorage.getItem("button-power")) || 1;
   console.log(btnp);
 }
 
