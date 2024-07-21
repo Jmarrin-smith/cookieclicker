@@ -1,9 +1,9 @@
 body {
-  height: 100vh;
+  height: 130vh;
   font-family: "CARTOON FREE", sans-serif;
   margin: 0%;
   border: 0%;
-  background-color: rgb(216, 239, 242);
+  background-color: rgb(215, 229, 231);
   color: #9f5d00;
 }
 
@@ -34,7 +34,7 @@ body {
   right: 35vw;
   width: 30vw;
   min-width: 200px;
-  height: 200px;
+  height: 400px;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: end;
@@ -52,10 +52,10 @@ img .upgrade-a {
 
 .upgrade-a {
   width: 15vw;
-  height: 40px;
+  height: 80px;
 }
 
 .upgrade-p {
   width: 15vw;
-  height: 40px;
+  height: 80px;
 }
